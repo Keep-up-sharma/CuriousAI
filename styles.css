@@ -1,0 +1,504 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.873);
+    height: 100%;
+}
+
+
+
+header {
+    position: absolute;
+    color: azure;
+    letter-spacing: 2px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgb(23, 23, 24), rgb(51, 51, 66));
+}
+
+header>img{
+    height: 50px;
+    position: relative;
+    top: 5px;
+}
+
+header h1 {
+    font-size: 2.3em;
+    letter-spacing: 0px;
+    display: inline;
+}
+
+header h2 {
+    font-size: 1em;
+    letter-spacing: 0px;
+    display: inline;
+}
+
+nav {
+    border: 2px solid rgba(0, 0, 0, 0.196);
+    background-color: rgba(34, 195, 195, 0.105);
+    width: 300px;
+}
+
+nav ul {
+    transition: 1s;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 500ms;
+}
+
+nav li a {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li img {
+    transition: 1s;
+    margin: auto;
+    margin-top: 0px;
+    height: 0px;
+    width: 0px;
+}
+
+nav:hover li img {
+    height: 20px;
+    width: 20px;
+}
+
+nav li:hover {
+    font-size: 1.1em;
+}
+
+nav ul:hover {
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(3, 3, 3, 0.153);
+    position: relative;
+    padding-top: 10px;
+}
+
+#chat input {
+    border-radius: 20px;
+    transition: 1s;
+    height: 35px;
+    min-width: 100px;
+    border: 0px;
+    background-color: rgb(203, 202, 202);
+    padding: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+#chat input:focus {
+    outline: none;
+}
+
+#chat form div {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+#chat button {
+    position: relative;
+    border-radius: 20px;
+    bottom: 0px;
+    right: 50px;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+    border: none;
+}
+
+#chat button:hover {
+   cursor: pointer;
+}
+
+#chat {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    margin: 20px;
+    height: 75vh;
+    margin-top: 20px;
+}
+
+#TabsList {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    scrollbar-width: none;
+}
+
+.tab {
+    margin-left: 5px;
+    position: relative;
+    background-color: white;
+    min-width: 70px;
+    max-width: 70px;
+    font-size: 0.8em;
+    /* margin: auto; */
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+    transition: 300ms;
+}
+
+.tab img {
+    position: absolute;
+    right: 5px;
+    height: 15px;
+}
+
+.Newtab {
+    background-color: rgba(10, 151, 245, 0.715);
+    color: white;
+    /* width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px; */
+}
+
+
+.tab:hover {
+    cursor: pointer;
+}
+
+main {
+    margin: auto;
+    position: relative;
+    top: 100px;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    max-width: 95%;
+}
+
+#content {
+    overflow: scroll;
+    padding-bottom: 200px;
+    height: max(200px, 40vh);
+}
+
+.botBubble {
+    margin: 10px;
+    border-radius: 10px 10px 10px 0px;
+    max-width: 80%;
+    width: fit-content;
+    word-wrap: normal;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+
+}
+
+.botBubble .imgDiv {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.botBubble img {
+    width: 150px;
+}
+
+.userBubble {
+    margin: 10px;
+    margin-left: auto;
+    border-radius: 10px 10px 0px 10px;
+    max-width: 80%;
+    width: fit-content;
+    word-wrap: normal;
+    color: rgb(204, 199, 199);
+    padding: 5px;
+    background-color: rgba(58, 58, 58, 0.534);
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+    width: 200px;
+}
+
+
+.product {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    height: 50px;
+    background-color: rgb(37, 36, 40);
+    border: 1px solid rgba(255, 255, 255, 0.407);
+    margin: 10px;
+    color: white;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.product:hover {
+    cursor: pointer;
+    height: 120px;
+    background-color: rgba(99, 61, 174, 0.451);
+}
+
+.product>img{
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition:1s;
+}
+.product:hover>img{
+    rotate: 45deg;
+}
+.product button {
+    transition: 500ms;
+    background-color: transparent;
+    width: 80px;
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    height: 0px;
+    width: 0px;
+    color: transparent;
+    border: none;
+}
+
+.product .descripton {
+    transition: 1s;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: transparent;
+    max-width: 70%;
+}
+
+.product:hover button {
+    background-color: rgba(10, 10, 10, 0.366);
+    height: 40px;
+    width: 80px;
+    color: white;
+    cursor: pointer;
+}
+
+.product:hover .descripton {
+    color: rgba(243, 243, 243, 0.6);
+}
+
+.product .price {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    font-size: 0.5em;
+}
+
+#products ul {
+    list-style: none;
+}
+
+#products {
+    margin: auto;
+    max-width: 800px;
+}
+
+#contactBody {
+    margin: auto;
+    max-width: 90vw;
+    /* margin: 10px; */
+    color: white;
+}
+
+#contactBody fieldset input {
+    position: relative;
+    right:0px;
+    transition: 200ms;
+    font-size: 1em;
+    width: 70%;
+    height: 30px;
+}
+
+#contactBody fieldset input:focus {
+    outline: none;
+}
+
+.homemain{
+    height: 80vh;
+    width: 95vw;
+}
+
+#contactBody fieldset div {
+    position: relative;
+    margin: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactBody form button {
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: rgba(124, 68, 196, 0.432);
+    position: static;
+}
+
+#contactBody form button:hover {
+    cursor: pointer;
+}
+
+#Comments {
+    background-color: aliceblue;
+    max-width: 300px;
+    width: 300px;
+    max-height: 100px;
+}
+
+footer a{
+    color: white;
+}
+
+#contactBody fieldset div.error{
+    position: relative;
+    top: -20px;
+    right: 20px;
+    font-size: 0.7em; 
+    transition: 300ms;
+    width: 0px;
+    margin: 0px;
+    color: transparent;
+}
+
+@media only screen and (min-width:800px) {
+    .botBubble .imgDiv {
+        grid-template-columns: 150px 150px 150px;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    #TabsList {
+        display: block;
+        background-color: rgba(240, 248, 255, 0.111);
+        position: absolute;
+        /* top: 120px; */
+        left: 10px;
+        padding-top: 10px;
+        width: 20%;
+        border:1px solid rgba(255, 255, 255, 0.442);
+        border-radius: 20px;
+        height: 75vh;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    .tab {
+        position: relative;
+        background-color: white;
+        width: 80%;
+        font-size: 1em;
+        margin: auto;
+        max-width: 80%;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        transition: 300ms;
+    }
+    .Newtab {
+        background-color: rgba(31, 123, 185, 0.715);
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .tab img {
+        position: absolute;
+        right: 5px;
+        height: 20px;
+    }
+
+    header {
+        text-align: left;
+        padding: 20px;
+        width: 90%;
+        background: none;
+    }
+
+    header nav {
+        position: absolute;
+        right: 30px;
+        top: 0px;
+    }
+
+    #chat {
+        background-color: rgba(0, 0, 0, 0.216);
+        min-width: 70%;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.303);
+    }
+
+    #chat input:focus {
+        min-width: 80%;
+    }
+
+    #contactBody fieldset div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contactBody fieldset label {
+        width: 120px;
+    }
+
+    
+}
+
+@media only screen and (max-width:700px){
+    #contactBody fieldset div.error{
+        position: absolute;
+        right:0px;
+        /* left: 100px; */
+        font-size: 0.7em; 
+        transition: 300ms;
+        width: 0px;
+        margin: 0px;
+        color: transparent;
+    }
+
+    .product .descripton {
+    transition: 1s;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 0.8em;
+    color: transparent;
+    max-width: 70%;
+}
+}
